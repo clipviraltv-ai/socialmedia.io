@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Media Biytesz - Downloader</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --bg-primary: #0a0a0a;
+    --bg-secondary: #111111;
+    --bg-card: #1a1a1a;
+    --text-primary: #ffffff;
+    --text-secondary: #a3a3a3;
+    --text-muted: #666666;
+    --accent: #8b5cf6;
+    --accent-hover: #7c3aed;
+    --border: #333333;
+    --glass: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--glass);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--glass-border);
+    padding: 0.75rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo-text {
+    font-weight: 700;
+    font-size: 1.5rem;
+    background: linear-gradient(135deg, var(--accent), #ec4899);
+   
+    -webkit-text-fill-color: transparent;
+}
+.nav-links {
+    display: flex;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+}
+.nav-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+/* Sections */
+.section-card {
+    background: var(--glass);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 1rem;
+    padding: 2rem;
+    max-width: 900px;
+    margin: 2rem auto;
+    color: var(--text-primary);
+}
+.section-card h2 {
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+.section-card h3 {
+    margin-top: 1.5rem;
+    font-weight: 600;
+    color: var(--accent-hover);
+}
+.section-card p {
+    margin-top: 0.75rem;
+    color: var(--text-secondary);
+}
+
+/* Footer */
+.footer {
+    background: var(--glass);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid var(--glass-border);
+    padding: 1rem;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-top: 3rem;
+}
+.footer p {
+    margin: 0;
+    transition: color 0.3s ease;
+}
+.footer p:hover {
+    color: var(--accent);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .section-card {
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 0.95rem;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo-text">Media Biytesz</div>
+    <div class="nav-links">
+        <a href="./index.html">Home</a>
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#terms">Terms & Conditions</a>
+        <a href="#about">About Us</a>
+        <a href="#disclaimer">Disclaimer</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- Hero -->
+<div class="section-card" style="text-align:center;">
+    <h1 style="background: linear-gradient(135deg, var(--accent), #ec4899, #f59e0b);  -webkit-text-fill-color: transparent;">
+        Media Biytesz Downloader
+    </h1>
+    <p>Download content from your favorite social media platforms with ease.</p>
+</div>
+
+<!-- Privacy Policy -->
+<section id="privacy" class="section-card privacy-policy">
+    <h2>Privacy Policy</h2>
+    <p>Last updated: August 13, 2025</p>
+
+    <h3>Information We Collect</h3>
+    <p>We do not store or collect personal information such as your name, email, or payment details. Non-personal data such as browser type and page visits may be collected for analytics purposes.</p>
+
+    <h3>Use of Information</h3>
+    <p>Your information is used solely to improve our services and provide a better user experience. We do not sell, rent, or share your data with third parties.</p>
+
+    <h3>Cookies</h3>
+    <p>We use cookies and similar technologies for performance and analytics. You can control cookies in your browser settings.</p>
+
+    <h3>Data Security</h3>
+    <p>We implement protective measures to secure data, though no method is 100% safe.</p>
+
+    <h3>Third-Party Services</h3>
+    <p>We may integrate with third-party services like Google AdSense for monetization. These providers have their own privacy policies.</p>
+
+    <h3>Children's Privacy</h3>
+    <p>Our services are not directed to children under 13, and we do not knowingly collect their data.</p>
+
+    <h3>Contact Us</h3>
+    <p>For privacy-related questions, contact: <strong>support@mediabiytesz.com</strong></p>
+</section>
+
+<!-- Terms & Conditions -->
+<section id="terms" class="section-card">
+    <h2>Terms & Conditions</h2>
+    <p>By using our downloader, you agree to only download content that you have rights to. We are not responsible for any misuse of this service.</p>
+</section>
+
+<!-- About Us -->
+<section id="about" class="section-card">
+    <h2>About Us</h2>
+    <p>Media Biytesz is a free tool to help users download media from various social media platforms responsibly and securely.</p>
+</section>
+
+<!-- Disclaimer -->
+<section id="disclaimer" class="section-card">
+    <h2>Disclaimer</h2>
+    <p>We are not affiliated with any social media platform. Use this service at your own risk and only for lawful purposes.</p>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section-card">
+    <h2>Contact</h2>
+    <p>Email: <strong>support@mediabiytesz.com</strong></p>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>© 2025 Media Biytesz. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
